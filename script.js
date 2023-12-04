@@ -11,13 +11,13 @@ const map = document.getElementById("map");
 //**** create map */
 
 function CreateMap(){
-    for (let x = 0; x < tileMap.mapGrid.length; x++) {
-        for (let y = 0; y < tileMap.mapGrid[x].length; y++) {
+    for (let y = 0; y < tileMap.height ; y++) {
+        for (let x = 0; x < tileMap.width ; x++) {
             const tile = document.createElement("img");
             tile.className = "tile";
             tile.id = "x" + x + "y" + y;
     
-            let tileType = tileMap.mapGrid[x][y][0];
+            let tileType = tileMap.mapGrid[y][x][0];
     
             if(tileType == "W"){
                 tile.classList.add(Tiles.Wall);
@@ -49,6 +49,9 @@ function CreateMap(){
 
             map.appendChild(tile);
         }
+
+        map.appendChild(document.createElement("br"));
+
     }    
 }
 
