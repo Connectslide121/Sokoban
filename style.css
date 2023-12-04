@@ -1,0 +1,13 @@
+
+#map{
+    width: 684px;
+    line-height: 0px;
+}
+
+
+.tile{
+    width: 36px;
+    height: 36px;
+    background: rgba(191, 201, 100, 0.514);
+
+}
