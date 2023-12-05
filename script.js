@@ -5,6 +5,7 @@ let tileType
 let playerCoords
 let totalGoalCount
 let goalCount
+let moveCount
 let gameCompleted = false
 
 const tileClass = {
@@ -19,9 +20,11 @@ const map = document.getElementById("map")
 
 //***** create map *****/
 
-function CreateMap(){
+function createMap(){
 
+    moveCount = 0
     totalGoalCount = 0
+    goalCount = 0
     map.innerHTML = ""    
 
     for (let y = 0; y < tileMap.height ; y++) {
@@ -40,10 +43,12 @@ function CreateMap(){
         }
     }    
 
-    goalCount = totalGoalCount
+    goalCounter()
+
 }
 
-CreateMap();
+
+createMap();
 
 
 
@@ -101,7 +106,8 @@ function movePlayer(moveX, moveY){
         targetTiles[2].classList.remove(Tiles.Goal)
         targetTiles[2].classList.add(Entities.BlockDone)
 
-        goalCount--
+        goalCount++
+
     }
 
     if (targetTilesClasses[1].contains(Entities.BlockDone) && targetTilesClasses[2].contains(Tiles.Goal))
@@ -119,7 +125,7 @@ function movePlayer(moveX, moveY){
         targetTiles[2].classList.remove(Tiles.Space)
         targetTiles[2].classList.add(Entities.Block)
 
-        goalCount++
+        goalCount--
     }
 
     if (moveIsValid == true)
@@ -140,13 +146,32 @@ function movePlayer(moveX, moveY){
         targetTiles[1].classList.add(Entities.Character)
     }
 
-    if (goalCount == 0) {gameComplete()}
+    if (goalCount == totalGoalCount) {gameComplete()}
+
+    moveCounter()
 
     console.log(targetTilesClasses)
     console.log(moveIsValid)
     console.log(goalCount)
+    console.log(totalGoalCount)
+    goalCounter()
 
 }
+
+//***** move counter *****/
+function goalCounter(){
+    document.getElementById("goalCounter").innerHTML = goalCount + "/" + totalGoalCount;
+
+}
+
+//***** move counter *****/
+
+function moveCounter(){
+    moveCount++
+    document.getElementById("moveCounter").innerHTML = moveCount;
+}
+
+//***** game complete *****/
 
 function gameComplete(){
 
