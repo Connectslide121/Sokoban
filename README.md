@@ -3,4 +3,4 @@
 # Sokoban
 Lexicon - .NET course - Week 12 assignment
 
-A Sokoban game made with JavaScript
+A Sokoban game made with JavaScript. [Play here](https://connectslide121.github.io/Sokoban/)
