@@ -61,12 +61,16 @@ function playerInput(event){
 
     if (event.key == ("ArrowUp") && gameCompleted != true) { movePlayer(0, -1); }
     else if (event.key == ("w") && gameCompleted != true) { movePlayer(0, -1); }
+    else if (event.key == ("W") && gameCompleted != true) { movePlayer(0, -1); }
     else if (event.key == ("ArrowLeft") && gameCompleted != true) { movePlayer(-1, 0); }
     else if (event.key == ("a") && gameCompleted != true) { movePlayer(-1, 0); }
+    else if (event.key == ("A") && gameCompleted != true) { movePlayer(-1, 0); }
     else if (event.key == ("ArrowDown") && gameCompleted != true) { movePlayer(0, 1); }
     else if (event.key == ("s") && gameCompleted != true) { movePlayer(0, 1); }
+    else if (event.key == ("S") && gameCompleted != true) { movePlayer(0, 1); }
     else if (event.key == ("ArrowRight") && gameCompleted != true) { movePlayer(1, 0); }
     else if (event.key == ("d") && gameCompleted != true) { movePlayer(1, 0); }
+    else if (event.key == ("D") && gameCompleted != true) { movePlayer(1, 0); }
     event.preventDefault();
 }
 
