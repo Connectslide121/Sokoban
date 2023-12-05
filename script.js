@@ -7,6 +7,7 @@ let totalGoalCount
 let goalCount
 let moveCount
 let gameCompleted = false
+let gameCompleteMessage = document.getElementById("gameCompleteMessage")
 
 const tileClass = {
     " ": Tiles.Space,
@@ -22,7 +23,8 @@ const map = document.getElementById("map")
 
 function createMap(){
 
-    moveCount = 0
+    gameCompleteMessage.classList = "inactiveGameComplete"
+    moveCount = -1
     totalGoalCount = 0
     goalCount = 0
     map.innerHTML = ""    
@@ -44,6 +46,7 @@ function createMap(){
     }    
 
     goalCounter()
+    moveCounter()
 
 }
 
@@ -130,6 +133,8 @@ function movePlayer(moveX, moveY){
 
     if (moveIsValid == true)
     {
+            moveCounter()
+
         if (tileMap.mapGrid[playerCoords.y][playerCoords.x][0] == "G")
         {
             targetTiles[0].classList.add(Tiles.Goal)
@@ -148,19 +153,13 @@ function movePlayer(moveX, moveY){
 
     if (goalCount == totalGoalCount) {gameComplete()}
 
-    moveCounter()
-
-    console.log(targetTilesClasses)
-    console.log(moveIsValid)
-    console.log(goalCount)
-    console.log(totalGoalCount)
     goalCounter()
 
 }
 
 //***** move counter *****/
 function goalCounter(){
-    document.getElementById("goalCounter").innerHTML = goalCount + "/" + totalGoalCount;
+    document.getElementById("goalCounter").innerHTML = goalCount + " / " + totalGoalCount;
 
 }
 
@@ -168,15 +167,15 @@ function goalCounter(){
 
 function moveCounter(){
     moveCount++
-    document.getElementById("moveCounter").innerHTML = moveCount;
+    document.getElementById("moveCounter").innerHTML = moveCount
 }
 
 //***** game complete *****/
 
 function gameComplete(){
-
     gameCompleted = true
-
+    gameCompleteMessage.classList = "activeGameComplete"
+    document.getElementById("completedMoves").innerHTML = moveCount
 }
 
 

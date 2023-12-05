@@ -7,20 +7,20 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    color: #efefef;
+    color: #d7ba75;
     max-width: 80%;
     padding: 0 10%;
     background: black;
     height: 100vh;
 }
 
-h2{
-    margin: 5px;
+h1{
+    color: beige;
 }
 
-h3{
-    font-weight: 100;
-    font-size: 18px;
+h2{
+    color: beige;
+    font-size: 22px;
 }
 
 .header{
@@ -45,7 +45,7 @@ h3{
     background: #383838;
     display: grid;
     grid-template-columns: repeat(19, 45px);
-    width: 85%;
+    width: 80%;
     justify-content: center;
     overflow: hidden;
 }
@@ -63,6 +63,7 @@ h3{
 .entity-player{
     background: url(images/player.png);
     background-size: cover;
+    transition: transform 0.2s ease-in-out;
 }
 
 .entity-block{
@@ -83,15 +84,35 @@ h3{
 .sidebar{
     display: flex;
     flex-direction: column;
-    padding: 0 5% 0 2%;
-    background: #383838;
-    width: 15%;
+    padding: 0 2%;
+    background: #494747;
+    width: 20%;
     text-align: center;
+    justify-content: center;
+}
+
+.goalCounterBox{
+    background: #2a2a2a;
+    padding: 20px 0;
+}
+
+.moveCounterBox{
+    background: #2a2a2a;
+    padding-bottom: 20px;
+}
+
+h2{
+    margin: 0 0 10px;
+}
+
+p{
+    margin: 0;
 }
 
 .restart{
     margin-top: 20px;
     height: 50px;
+    font-size: 18px;
 }
 
 .instructions{
@@ -106,16 +127,31 @@ h3{
     background: #2a2a2a;
 }
 
-@media screen and (max-width: 1200px) {
+.inactiveGameComplete{
+    display: none;
+}
+
+.activeGameComplete{
+    position: absolute;
+    top: 25%;
+    right: 35%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1270px) {
     .tile{
-        width: 36px;
-        height: 36px;
+        width: 32px;
+        height: 32px;
     }
 
     #map{
-        grid-template-columns: repeat(19, 36px);
+        grid-template-columns: repeat(19, 32px);
     }
     
+    .sidebar{
+        padding: 0 2%;
+    }
+
     h1{
         font-size: 26px;
     }
@@ -124,12 +160,72 @@ h3{
         font-size: 20px;
     }
 
-    h3{
-        font-size: 15px;
+    p{
+        font-size: 12px;
     }
 
+    .restart{
+        margin-top: 15px;
+        height: 40px;
+        font-size: 12px;
+    }
+   
     .instructions{
         margin-top: 20px;
     }
 
+    .activeGameComplete{
+        top: 20%;
+        right: 30%;
+    }
+    
+
+}@media screen and (max-width: 900px) {
+    .tile{
+        width: 24px;
+        height: 24px;
+    }
+
+    #map{
+        grid-template-columns: repeat(19, 24px);
+    }
+    
+    .sidebar{
+        padding: 0;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 12px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    .goalCounterBox{
+        padding: 5px 0;
+    }
+    
+    .moveCounterBox{
+        padding: 5px 0;
+    }
+    
+    .restart{
+        margin-top: 15px;
+        height: 30px;
+        font-size: 10px;
+    }  
+
+    .instructions{
+        margin-top: 10px;
+    }
+
+    .activeGameComplete{
+        top: 15%;
+        right: 32%;
+    }
 }

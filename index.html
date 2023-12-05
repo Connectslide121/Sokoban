@@ -16,18 +16,26 @@
         <div class="main">
             <div id="map"></div>
             <div class="sidebar">
-                <h2 class="goals">GOALS</h2>
-                <h2 id="goalCounter">0</h2>
-                <h2 class="moves">MOVES</h2>
-                <h2 id="moveCounter">0</h2>
+                <div class="goalCounterBox">
+                    <h2 class="goals">GOALS</h2>
+                    <p id="goalCounter"></p>   
+                </div>
+                <div class="moveCounterBox">
+                    <h2 class="moves">MOVES</h2>
+                    <p id="moveCounter"></p>    
+                </div>
                 <button class="restart" onclick="createMap()">RESTART</button>
-                <h3 class="instructions">
+                <p class="instructions">
                     Sokoban is japanese for 'warehouse keeper'. <br><br>
                     This puzzle game was originally invented in Japan in the early 80's. <br><br>
-                    Use the arrow or WASD keys to move the character and push the crates to their proper locations with a minimum number of moves.
-                </h3>
+                    Use WASD or arrow keys to move the character and push the crates to the goals with a minimum number of moves.
+                </p>
             </div>
-            <div class="gameComplete">
+            <div id="gameCompleteMessage">
+                <h2>Well done!</h2>
+                <h2>You completed the puzzle in</h2>
+                <h2 id="completedMoves"></h2>
+                <h2>moves!</h2>
             </div>    
         </div>
         <div class="footer">
