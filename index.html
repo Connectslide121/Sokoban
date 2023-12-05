@@ -7,8 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="map"></div>
-    
+    <div class="background">
+        <div class="container">
+            <div class="header">
+                <h1>SOKOBAN</h1>
+            </div>
+            <div class="main">
+                <div id="map"></div>
+                <div class="sidebar">
+                    <h2 class="goals">GOALS</h2>
+                    <h2 class="moves">MOVES</h2>
+                    <button id="restart" onclick="CreateMap()">RESTART</button>
+                </div>
+            
+                <div class="gameComplete">
+            
+                </div>
+        
+            </div>
+        </div>
+    </div>
     <script src="SokobanBase.js"></script>
     <script src="script.js"></script>
 </body>

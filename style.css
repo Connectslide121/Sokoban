@@ -1,9 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    background: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    color: #efefef;
+    max-width: 1200px;
+}
+
+.header{
+    text-align: center;
+    background: #2a2a2a;
+    border: solid 1px black;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
 #map{
     background: #383838;
     width: fit-content;
-    padding: 0 45px;
     display: grid;
     grid-template-columns: repeat(19, 45px);
+    border: solid 1px black;
+    width: 85%;
+    justify-content: center;
 }
 
 .tile{
@@ -29,4 +59,15 @@
 .tile-goal{
     background: url(images/goal.png);
     background-size: cover;
+}
+
+.entity-block-goal{
+    background: url(images/boxgoal.png);
+    background-size: cover;
+}
+
+.sidebar{
+    padding-left: 5%;
+    background: #383838;
+    width: 15%;
 }
