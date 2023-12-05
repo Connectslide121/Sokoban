@@ -1,12 +1,32 @@
 #map{
-    line-height: 0px;
-    white-space: nowrap;
+    background: #383838;
+    width: fit-content;
+    padding: 0 45px;
+    display: grid;
+    grid-template-columns: repeat(19, 45px);
 }
 
-
 .tile{
-    width: 36px;
-    height: 36px;
-    background: rgba(191, 201, 100, 0.514);
+    width: 45px;
+    height: 45px;
+}
 
+.tile-wall{
+    background: url(images/wall.png);
+    background-size: cover;
+}
+
+.entity-player{
+    background: url(images/player.png);
+    background-size: cover;
+}
+
+.entity-block{
+    background: url(images/box.png);
+    background-size: cover;
+}
+
+.tile-goal{
+    background: url(images/goal.png);
+    background-size: cover;
 }
