@@ -19,6 +19,23 @@ const tileClass = {
 
 const map = document.getElementById("map")
 
+//***** change map *****/
+
+function changeMap() {
+    const mapSelector = document.getElementById("mapSelector");
+    const selectedMap = mapSelector.value;
+
+    // Update tileMap based on the selected map
+    if (selectedMap === "map01") {
+        tileMap = tileMap01;
+    } else if (selectedMap === "map02") {
+        tileMap = tileMap02;
+    }
+    
+    // Recreate the map with the new selected map
+    createMap();
+}
+
 //***** create map *****/
 
 function createMap(){

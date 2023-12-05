@@ -26,6 +26,14 @@
                     <p id="moveCounter"></p>    
                 </div>
                 <button class="restart" onclick="createMap()">RESTART</button>
+                <div class="mapSelector">
+                    <p>SELECT MAP:</p>
+                    <select id="mapSelector" onchange="changeMap()">
+                        <option value="map01">Map 1</option>
+                        <option value="map02">Map 2</option>
+                        <!-- Add more options for additional maps -->
+                    </select>    
+                </div>
                 <p class="instructions">
                     Sokoban is japanese for 'warehouse keeper'. <br><br>
                     This puzzle game was originally invented in Japan in the early 80's. <br><br>

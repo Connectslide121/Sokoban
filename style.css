@@ -132,6 +132,24 @@ p{
     font-size: 19px;
 }
 
+.mapSelector{
+    margin-top: 15px;
+    background-color: #2a2a2a;
+    color: beige;
+    display: flex;
+    flex-direction: column;
+}
+
+.mapSelector p{
+    margin: 20px 0;
+
+}
+
+.mapSelector select{
+    margin: 0 50px 20px;
+    text-align: center;
+}
+
 .instructions{
     margin-top: 20px;
 }
@@ -151,9 +169,12 @@ p{
 
 .activeGameComplete{
     position: absolute;
-    top: 25%;
-    right: 35%;
+    top: 35%;
+    right: 45%;
     text-align: center;
+    background: #2a2a2a;
+    border: solid 1px beige;
+    padding: 40px;
 }
 
 @media screen and (max-width: 1270px) {
@@ -187,14 +208,18 @@ p{
         height: 40px;
         font-size: 12px;
     }
+
+    .mapSelector select{
+        margin: 0 30px 10px;
+    }    
    
     .instructions{
         margin-top: 20px;
     }
 
     .activeGameComplete{
-        top: 20%;
-        right: 30%;
+        top: 25%;
+        right: 40%;
     }
     
 
@@ -238,12 +263,17 @@ p{
         font-size: 10px;
     }  
 
+    .mapSelector select{
+        margin: 0 20px 10px;
+        font-size: 10px;
+    }    
+
     .instructions{
         margin-top: 10px;
     }
 
     .activeGameComplete{
         top: 15%;
-        right: 32%;
+        right: 40%;
     }
 }
