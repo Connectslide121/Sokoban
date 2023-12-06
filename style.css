@@ -133,7 +133,7 @@ p{
 }
 
 .mapSelector{
-    margin-top: 15px;
+    margin-top: 20px;
     background-color: #2a2a2a;
     color: beige;
     display: flex;
@@ -154,6 +154,29 @@ p{
     margin-top: 20px;
 }
 
+.converterButton{
+    margin-top: 20px;
+    padding: 20px 0;
+    font-size: 18px;
+    background-color: #2a2a2a;
+    color: beige;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.converterButton:hover{
+    background: #383838;
+    font-size: 20px;
+    padding: 19px 0;
+}
+
+.converterButton:active{
+    background: #302e2e ;
+    font-size: 19px;
+}
+
+
 .footer{
     width: 100%;
     height: 100%;
@@ -173,7 +196,7 @@ p{
     right: 45%;
     text-align: center;
     background: #2a2a2a;
-    border: solid 1px beige;
+    border: solid 1px black;
     padding: 40px;
 }
 
@@ -196,7 +219,7 @@ p{
     }
 
     h2{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     p{
@@ -204,9 +227,25 @@ p{
     }
 
     .restart{
-        margin-top: 15px;
+        margin-top: 10px;
         height: 40px;
         font-size: 12px;
+    }
+
+    .restart:hover{
+        font-size: 14px;
+    }
+    
+    .restart:active{
+        font-size: 13px;
+    }
+    
+    .mapSelector{
+        margin-top: 10px;
+    }
+
+    .mapSelector p{
+        margin: 10px 0;
     }
 
     .mapSelector select{
@@ -216,7 +255,22 @@ p{
     .instructions{
         margin-top: 20px;
     }
-
+    
+    .converterButton{
+        margin-top: 20px;
+        padding: 14px 0;
+        font-size: 12px;
+    }
+    
+    .converterButton:hover{
+        font-size: 14px;
+        padding: 13px 0;
+    }
+    
+    .converterButton:active{
+        font-size: 14px;
+    }
+    
     .activeGameComplete{
         top: 25%;
         right: 40%;
@@ -258,10 +312,26 @@ p{
     }
     
     .restart{
-        margin-top: 15px;
+        margin-top: 10px;
         height: 30px;
         font-size: 10px;
     }  
+
+    .restart:hover{
+        font-size: 12px;
+    }
+    
+    .restart:active{
+        font-size: 11px;
+    }
+    
+    .mapSelector{
+        margin-top: 10px;
+    }
+
+    .mapSelector p{
+        margin: 10px 0;
+    }
 
     .mapSelector select{
         margin: 0 20px 10px;
@@ -270,6 +340,21 @@ p{
 
     .instructions{
         margin-top: 10px;
+    }
+
+    .converterButton{
+        margin-top: 10px;
+        padding: 14px 0;
+        font-size: 10px;
+    }
+    
+    .converterButton:hover{
+        font-size: 12px;
+        padding: 12.5px 0;
+    }
+    
+    .converterButton:active{
+        font-size: 12px;
     }
 
     .activeGameComplete{

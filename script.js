@@ -26,10 +26,22 @@ function changeMap() {
     const selectedMap = mapSelector.value;
 
     // Update tileMap based on the selected map
-    if (selectedMap === "map01") {
+    if (selectedMap == "map01") {
         tileMap = tileMap01;
-    } else if (selectedMap === "map02") {
+    } else if (selectedMap == "map02") {
         tileMap = tileMap02;
+    } else if (selectedMap == "map03") {
+        tileMap = tileMap03;
+    } else if (selectedMap == "map04") {
+        tileMap = tileMap04;
+    } else if (selectedMap == "map05") {
+        tileMap = tileMap05;
+    } else if (selectedMap == "map06") {
+        tileMap = tileMap06;
+    } else if (selectedMap == "map07") {
+        tileMap = tileMap07;
+    } else if (selectedMap == "map08") {
+        tileMap = tileMap08;
     }
     
     // Recreate the map with the new selected map
@@ -44,6 +56,8 @@ function createMap(){
     moveCount = -1
     totalGoalCount = 0
     goalCount = 0
+    gameCompleted = false
+
     map.innerHTML = ""    
 
     for (let y = 0; y < tileMap.height ; y++) {

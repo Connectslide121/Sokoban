@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sokoban - Jon Mendizabal</title>
+    <title>Sokoban Game</title>
     <link rel="icon" type="image/png" href="./images/box.png?">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -31,14 +31,21 @@
                     <select id="mapSelector" onchange="changeMap()">
                         <option value="map01">Map 1</option>
                         <option value="map02">Map 2</option>
-                        <!-- Add more options for additional maps -->
+                        <option value="map03">Map 3</option>
+                        <option value="map04">Map 4</option>
+                        <option value="map05">Map 5</option>
+                        <option value="map06">Map 6</option>
+                        <option value="map07">Map 7</option>
+                        <option value="map08">Map 8</option>
                     </select>    
                 </div>
                 <p class="instructions">
-                    Sokoban is japanese for 'warehouse keeper'. <br><br>
+                    Sokoban is japanese for 'warehouse keeper'.
                     This puzzle game was originally invented in Japan in the early 80's. <br><br>
                     Use WASD or arrow keys to move the character and push the crates to the goals with a minimum number of moves.
                 </p>
+                <a class="converterButton" href="mapConverter.html">MAP CONVERTER</a>
+
             </div>
             <div id="gameCompleteMessage">
                 <h2>Well done!</h2>
