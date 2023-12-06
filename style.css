@@ -216,7 +216,7 @@ p{
 .input{
     display: flex;
     flex-direction: column;
-    flex-basis: 15%;
+    flex-basis: 10%;
 }
 
 .backButton{
@@ -267,7 +267,7 @@ p{
 .output{
     display: flex;
     flex-direction: column;
-    flex-basis: 90%;
+    flex-basis: 70%;
 }
 
 

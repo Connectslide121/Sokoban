@@ -42,6 +42,50 @@ function changeMap() {
         tileMap = tileMap07;
     } else if (selectedMap == "map08") {
         tileMap = tileMap08;
+    } else if (selectedMap == "map09") {
+        tileMap = tileMap09;
+    } else if (selectedMap == "map10") {
+        tileMap = tileMap10;
+    } else if (selectedMap == "map11") {
+        tileMap = tileMap11;
+    } else if (selectedMap == "map12") {
+        tileMap = tileMap12;
+    } else if (selectedMap == "map13") {
+        tileMap = tileMap13;
+    } else if (selectedMap == "map14") {
+        tileMap = tileMap14;
+    } else if (selectedMap == "map15") {
+        tileMap = tileMap15;
+    } else if (selectedMap == "map16") {
+        tileMap = tileMap16;
+    } else if (selectedMap == "map17") {
+        tileMap = tileMap17;
+    } else if (selectedMap == "map18") {
+        tileMap = tileMap18;
+    } else if (selectedMap == "map19") {
+        tileMap = tileMap19;
+    } else if (selectedMap == "map20") {
+        tileMap = tileMap20;
+    } else if (selectedMap == "map21") {
+        tileMap = tileMap21;
+    } else if (selectedMap == "map22") {
+        tileMap = tileMap22;
+    } else if (selectedMap == "map23") {
+        tileMap = tileMap23;
+    } else if (selectedMap == "map24") {
+        tileMap = tileMap24;
+    } else if (selectedMap == "map25") {
+        tileMap = tileMap25;
+    } else if (selectedMap == "map26") {
+        tileMap = tileMap26;
+    } else if (selectedMap == "map27") {
+        tileMap = tileMap27;
+    } else if (selectedMap == "map28") {
+        tileMap = tileMap28;
+    } else if (selectedMap == "map29") {
+        tileMap = tileMap29;
+    } else if (selectedMap == "map30") {
+        tileMap = tileMap30;
     }
     
     // Recreate the map with the new selected map
