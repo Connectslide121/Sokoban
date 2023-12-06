@@ -14,7 +14,17 @@
             <h1>SOKOBAN MAP CONVERTER</h1>
             <img src="images/box.png">
         </div>
-        <div class="main">
+        <div class="mainConverter">
+            <div class="input">
+                <label for="inputText">Input Text:</label>
+                <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+            </div>
+            <button class="convertButton" onclick="handleConversion()">CONVERT</button>
+            <div class="output">
+                <label for="outputText">Converted Text:</label>
+                <textarea readonly id="outputText" placeholder="Converted text will be here..."></textarea>    
+            </div>
+            <a class="backButton" href="index.html">BACK</a>
         </div>
         <div class="footer">
             <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Jon Mendizabal</p>
