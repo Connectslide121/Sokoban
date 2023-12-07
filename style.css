@@ -226,28 +226,7 @@ h2{
 .input{
     display: flex;
     flex-direction: column;
-    flex-basis: 10%;
-}
-
-.backButton{
-    margin-left: 20px;
-    padding: 20px;
-    font-size: 18px;
-    background-color: #2a2a2a;
-    color: beige;
-    cursor: pointer;
-    border: none;
-    text-decoration: none;
-}
-
-.backButton:hover{
-    background: #494747;
-    font-size: 20px;
-    padding: 19px 17.5px;
-}
-
-.backButton:active{
-    background: #302e2e ;
+    flex-basis: 20%;
 }
 
 .convertButton{
@@ -370,21 +349,6 @@ h2{
     }
 
     .convertButton:active{
-        font-size: 14px;
-    }
-
-    .backButton{
-        margin: 12px;
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    .backButton:hover{
-        font-size: 14px;
-        padding: 12px;
-    }
-
-    .backButton:active{
         font-size: 14px;
     }
 
