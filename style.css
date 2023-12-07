@@ -10,7 +10,11 @@ body{
     color: #d7ba75;
     padding: 0 10%;
     background: black;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+p{
+    margin: 0;
 }
 
 h1{
@@ -20,14 +24,32 @@ h1{
 h2{
     color: beige;
     font-size: 22px;
+    margin: 0 0 10px;
 }
 
 .header{
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: #2a2a2a;
     display: flex;
     border-bottom: solid 1px black;
+    height: 10vh;
+}
+
+.converterButton{
+    text-decoration: none;
+    color: #d7ba75;
+    margin-left: 25px;
+}
+
+.converterButton:hover{
+    text-decoration: underline;
+}
+
+.headerMiddle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .header img{
@@ -37,10 +59,9 @@ h2{
 }
 
 .switchButton{
-    position: absolute;
-    right: 12%;
     text-decoration: none;
     color: #d7ba75;
+    margin-right: 25px;
 }
 
 .switchButton:hover{
@@ -113,14 +134,6 @@ h2{
     padding-bottom: 20px;
 }
 
-h2{
-    margin: 0 0 10px;
-}
-
-p{
-    margin: 0;
-}
-
 .restart{
     margin-top: 20px;
     height: 50px;
@@ -160,41 +173,28 @@ p{
     text-align: center;
 }
 
-.instructions{
-    margin-top: 20px;
-}
-
-.converterButton{
-    margin-top: 20px;
-    padding: 20px 0;
-    font-size: 18px;
-    background-color: #2a2a2a;
-    color: beige;
-    cursor: pointer;
-    border: none;
-    text-decoration: none;
-}
-
-.converterButton:hover{
-    background: #383838;
-    font-size: 20px;
-    padding: 19px 0;
-}
-
-.converterButton:active{
-    background: #302e2e ;
-    font-size: 19px;
-}
-
-
 .footer{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 100%;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 3% 0;
     background: #2a2a2a;
     border-top: solid 1px black;
+    padding: 5px 0;
 }
+
+.footer p{
+    padding: 5px 0;
+}
+
+.footer span{
+    color: beige;
+    font-weight: bold;
+}
+
 
 .inactiveGameComplete{
     display: none;
@@ -292,7 +292,10 @@ p{
     }
 
     .switchButton{
-        right: 3%;
+        font-size: 14px;
+    }
+
+    .converterButton{
         font-size: 14px;
     }
 
@@ -345,22 +348,7 @@ p{
     .instructions{
         margin-top: 20px;
     }
-    
-    .converterButton{
-        margin-top: 20px;
-        padding: 14px 0;
-        font-size: 12px;
-    }
-    
-    .converterButton:hover{
-        font-size: 14px;
-        padding: 13px 0;
-    }
-    
-    .converterButton:active{
-        font-size: 14px;
-    }
-    
+        
     .activeGameComplete{
         top: 25%;
         right: 40%;
@@ -463,21 +451,6 @@ p{
 
     .instructions{
         margin-top: 10px;
-    }
-
-    .converterButton{
-        margin-top: 10px;
-        padding: 14px 0;
-        font-size: 10px;
-    }
-    
-    .converterButton:hover{
-        font-size: 12px;
-        padding: 12.5px 0;
-    }
-    
-    .converterButton:active{
-        font-size: 12px;
     }
 
     .activeGameComplete{

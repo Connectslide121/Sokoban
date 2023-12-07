@@ -10,9 +10,12 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="images/box.png">
-            <h1>SOKOBAN</h1>
-            <img src="images/box.png">
+            <a class="converterButton" href="mapConverter.html">Map Converter</a>
+            <div class="headerMiddle">
+                <img src="images/box.png">
+                <h1>SOKOBAN</h1>
+                <img src="images/box.png">
+            </div>
             <a class="switchButton" href="https://connectslide121.github.io/Sokoban-Christmas-edition/">Christmas Edition</a>
         </div>
         <div class="main">
@@ -62,13 +65,6 @@
                         <option value="map30">Map 30</option>
                     </select>    
                 </div>
-                <p class="instructions">
-                    Sokoban is japanese for 'warehouse keeper'.
-                    This puzzle game was originally invented in Japan in the early 80's. <br><br>
-                    Use WASD or arrow keys to move the character and push the crates to the goals with a minimum number of moves.
-                </p>
-                <a class="converterButton" href="mapConverter.html">MAP CONVERTER</a>
-
             </div>
             <div id="gameCompleteMessage">
                 <h2>Well done!</h2>
@@ -78,6 +74,11 @@
             </div>    
         </div>
         <div class="footer">
+            <p class="context">Sokoban is japanese for 'warehouse keeper'. This puzzle game was originally invented in Japan in the early 80's.
+            </p>
+            <p class="instructions">
+                Use <span>WASD</span> or <span>arrow keys</span> to move <span>Santa</span> and push the <span>presents</span> to the <span>babies</span> with a minimum number of moves.
+            </p>
             <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Jon Mendizabal</p>
         </div>
     </div>
