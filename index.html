@@ -65,6 +65,16 @@
                         <option value="map30">Map 30</option>
                     </select>    
                 </div>
+                <div class="controls">
+                    <div class="rowOne">
+                        <button onclick="movePlayer(0, -1)"><i class="fa-solid fa-sort-up"></i></button>
+                    </div>
+                    <div class="rowTwo">
+                        <button onclick="movePlayer(-1, 0)"><i class="fa-solid fa-caret-left"></i></button>
+                        <button onclick="movePlayer(0, 1)"><i class="fa-solid fa-sort-down"></i></button>
+                        <button onclick="movePlayer(1, 0)"><i class="fa-solid fa-caret-right"></i></button>
+                    </div>
+                </div>
             </div>
             <div id="gameCompleteMessage">
                 <h2>Well done!</h2>
@@ -77,7 +87,7 @@
             <p class="context">Sokoban is japanese for 'warehouse keeper'. This puzzle game was originally invented in Japan in the early 80's.
             </p>
             <p class="instructions">
-                Use <span>WASD</span> or <span>arrow keys</span> to move <span>Santa</span> and push the <span>presents</span> to the <span>babies</span> with a minimum number of moves.
+                Use <span>WASD</span> , <span>arrow keys</span> or <span>in-screen controls</span> to move <span>Santa</span> and push the <span>presents</span> to the <span>babies</span> with a minimum number of moves.
             </p>
             <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Jon Mendizabal</p>
         </div>
