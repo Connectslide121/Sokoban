@@ -215,7 +215,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5% 5%;
+    padding: 5%;
     align-items: center;
 }
 
@@ -366,6 +366,39 @@ p{
         right: 40%;
     }
     
+    .mainConverter{
+        padding: 3%;
+    }
+
+    .convertButton{
+        margin: 12px;
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .convertButton:hover{
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .convertButton:active{
+        font-size: 14px;
+    }
+
+    .backButton{
+        margin: 12px;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .backButton:hover{
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .backButton:active{
+        font-size: 14px;
+    }
 
 }@media screen and (max-width: 900px) {
     .tile{
