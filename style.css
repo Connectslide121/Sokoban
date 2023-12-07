@@ -8,7 +8,6 @@ body{
     display: flex;
     flex-direction: column;
     color: #d7ba75;
-    max-width: 80%;
     padding: 0 10%;
     background: black;
     height: 100vh;
@@ -284,12 +283,21 @@ p{
 
 @media screen and (max-width: 1270px) {
     .tile{
-        width: 32px;
-        height: 32px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    .switchButton{
+        right: 3%;
+        font-size: 14px;
     }
 
     #map{
-        grid-template-columns: repeat(19, 32px);
+        grid-template-columns: repeat(19, 36px);
     }
     
     .sidebar{
