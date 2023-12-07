@@ -37,6 +37,17 @@ h2{
     padding: 0 45px;
 }
 
+.switchButton{
+    position: absolute;
+    right: 12%;
+    text-decoration: none;
+    color: #d7ba75;
+}
+
+.switchButton:hover{
+    text-decoration: underline;
+}
+
 .main{
     display: flex;
     flex-direction: row;
