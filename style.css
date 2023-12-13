@@ -180,6 +180,7 @@ h2{
 .controls button{
     font-size: 32px;
     width: 40px;
+    touch-action: manipulation;
 }
 
 .controls .rowOne{
