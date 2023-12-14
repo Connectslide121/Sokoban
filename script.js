@@ -236,7 +236,7 @@ function movePlayer(moveX, moveY){
 
 }
 
-//***** move counter *****/
+//***** goal counter *****/
 function goalCounter(){
     document.getElementById("goalCounter").innerHTML = goalCount + " / " + totalGoalCount;
 
